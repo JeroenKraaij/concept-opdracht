@@ -5,6 +5,8 @@
     <title>Business website</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
+
 <body>
     <header class="main-header">
         <div class="header-nav">
@@ -35,42 +37,44 @@
             <p>Have a question? <a href="/contact/">Click here</a> to contact us!</p>
         </div>
     </section>
-    <section class="main-section">
+    <section class="main-section-content">
         <article class="inner-container">
             <div class="text-content">
                 <h3>Rolling Stone</h3>
-                <img src="assets/squiggle_line.svg" alt="line"/>
+                <img class="small-image" src="assets/squiggle_line.svg" alt="line"/>
                 <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.</p>
-                <p>View Project</p>
-                <span class="image-wrapper">
-                <img src="assets/work-image-01.jpeg" alt="Image about the Rolling Stone"/>
-                </span>
+                <p><a href=""> View Project</a></p>
             </div>
+            <span class="image-wrapper">
+                <img src="assets/work-image-01.jpeg" alt="Image about the Rolling Stone"/>
+            </span>
+
         </article>
         <article class="inner-container">
             <div class="text-content">
                 <h3>Variety</h3>
-                <img src="assets/squiggle_line.svg" alt="line"/>
+                <img class="small-image" src="assets/squiggle_line.svg" alt="line"/>
                 <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905.</p>
-                <p>View Project</p>
-                <span class="image-wrapper">
-                <img src="assets/work-image-02.jpeg" alt="Image about variety"/>
-                </span>
+                <p><a href=""> View Project</a></p>
             </div>
+            <span class="image-wrapper">
+                <img src="assets/work-image-02.jpeg" alt="Image about variety"/>
+            </span>
+
         </article>
         <article class="inner-container">
             <div class="text-content">
                 <h3>Worth</h3>
-                <img src="assets/squiggle_line.svg" alt="line"/>
+                <img class="small-image" src="assets/squiggle_line.svg" alt="line"/>
                 <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
-                <p>View Project</p>
-                <span class="image-wrapper">
-                <img src="assets/work-image-03.jpeg" alt="Image about worth"/>
-                </span>
+                <p><a href=""> View Project</a></p>
             </div>
+            <span class="image-wrapper">
+                <img src="assets/work-image-03.jpeg" alt="Image about worth"/>
+            </span>
         </article>
     </section>
-    <section class="main-section">
+    <section class="main-section-service">
         <article class="main-services">
             <div class="services-content">
                 <img src="assets/icon_web-design.svg" alt="Web-design">
@@ -106,14 +110,19 @@
     </section>
     <footer id="contact" class="main-footer">
         <section class="form-footer">
-            <div class="text-form">
+            <div class="form-content">
                 <h5>Let's work together</h5>
                 <p>Have a question? Need a quote? Let us know!</p>
-            </div>
-            <div class="form-content">
-                <form class="form">
-
-                 <button class="form-summit-btn">Send</button>
+                <form class="form" onsubmit="">
+                    <label class=label for="name-field">Naam:</label>
+                    <input class="input" type="text" id="name-field" name="name-field" placeholder="Name"/>
+                    <label class=label for="email-field">E-mail:</label>
+                    <input class="input" type="email" id="email-field" name="email-field" placeholder="E-mail"/>
+                    <label class=label for="message-field">Message:</label>
+                    <textarea class="text-area" id="message-field" name="message" placeholder="Enter your question"></textarea>
+                    <div class="summit-btn">
+                    <button class="form-summit-btn">Send</button>
+                    </div>
                 </form>
             </div>
         </section>
